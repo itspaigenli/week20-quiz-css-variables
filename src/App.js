@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  const [logoColor, setColor] = useState("");
+  const [logoColor, setLogoColor] = useState("");
+
   useEffect(() => {
     const computedColor = getComputedStyle(
       document.documentElement,
     ).getPropertyValue("--logo-color");
+    setLogoColor(computedColor);
   }, []);
 
   function setColor(newColor) {

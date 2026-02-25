@@ -1,12 +1,10 @@
 :root {
-  /* Step 1: Add color variables here */
-  :root {
-    --logo-speedTiming: 20s;
-    --logo-color: red;
-  }
-
-  /* BONUS: Add size variables here */
+  --logo-speedTiming: 20s;
+  --logo-color: red;
+  --logo-size: 40vmin;
 }
+
+/* BONUS: Add size variables here */
 
 body {
   margin: 0;
